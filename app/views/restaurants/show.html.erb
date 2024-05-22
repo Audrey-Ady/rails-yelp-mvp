@@ -1,0 +1,8 @@
+<h1>Nom du restaurant : <%= @restaurant.name %></h1>
+
+  <p>Address : <%= @restaurant.address %></p>
+  <p>Phone number : <%= @restaurant.phone_number %></p>
+  <p>Category : <%= @restaurant.category %></p>
+
+  <%= link_to "back", restaurants_path %>
+  <a href="/restaurants/<% @restaurant.id %>" class="btn btn-primary">See details</a>
